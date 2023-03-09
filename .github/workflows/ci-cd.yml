@@ -39,7 +39,7 @@ jobs:
         repository: maven-releases
         coordinates: groupId=com.example artifactId=app version=1.0.0
         assets: extension=war
-        filename: ./target/app-1.0.0.war
+        filename: ./target/*.war
         
     
         
