@@ -28,4 +28,5 @@ jobs:
         url: ${{ secrets.SONARQUBE_HOST }}
         token: ${{ secrets.SONARQUBE_TOKEN }}
         
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=benz-project-cred
+        run: mvn sonar:sonar \
+            -Dsonar.projectKey=benz-project \
